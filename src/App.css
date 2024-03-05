@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,16 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body{
+ background-image: url("https://wallpapercave.com/wp/wp9764093.jpg");
+ /* background-image: url("http://codingstella.com/wp-content/uploads/2024/01/download-6-scaled.jpeg"); */
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+.App{
+  /* height:100hv; */
+  justify-content:center ;
 }

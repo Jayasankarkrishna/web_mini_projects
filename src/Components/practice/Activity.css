@@ -1,0 +1,122 @@
+/* body{
+    background-color: black;
+    background-image: url('/src/Components/images/bg1.png');
+    background-size: cover;
+
+
+} */
+.Table-container{
+    padding-left: 50px;
+    padding-top: 90px;
+}
+.response-activity-container {
+    margin-top: 30px;
+    padding-top: 30px;
+  } 
+  
+   
+  
+  table {
+    width: 95%;
+    border-collapse: collapse;
+    /* margin-top: 10px; */
+  }
+  
+  table,  td {
+    border: 1px solid black;
+    color: white;
+  }
+  table, th{
+    color: black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+   @media (max-width: 600px) {
+    .Login {
+      width: 100%;
+      padding: 10px;
+    } 
+  }
+  
+
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+    overflow: hidden;
+    /* background-color: #333; */
+        background-color: white;
+
+  }
+  
+  li {
+    float: right;
+    padding-right: 5px;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  li a:hover {
+    background-color: whitesmoke;
+  }
+
+
+
+ 
+
+
+ .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .loading-text {
+    font-size: 24px;
+    text-align: center;
+   }  
+  
+   .LOGO{
+    padding-top: 5px;
+    cursor: pointer;
+   }
+   /* Add this CSS to your Activity.css file */
+.popover-body .underline {
+  text-decoration: underline;
+}
+.popover-body{
+  width: 100%;
+  padding-top: 10px;
+  font-weight: 700
+}
+
+#popover-basic{
+  width: 28%;
+}
+
+.sidebar{
+  float: left;
+padding-top: 10px;
+
+}
+  
