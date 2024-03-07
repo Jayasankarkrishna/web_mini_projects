@@ -29,14 +29,21 @@ const LoginPage = () => {
         .then(response => {
 
           console.log('Login Successful', response.data);
-          if(response.data.loginStatus!=="Fail") {
+
+          if(response.data.loginStatus !== "Fail") {
+
             const userData=response.data
+
           setUserData(response.data);
           setLoggedIn(true);
+
+          setTimeout(() => {
 
             navigate( '/Activity',{state: {userData}});
             
             setErrorMessage('Login Succesful ',response.data.message)
+
+          }, 1000); // Delay of 5 seconds
 
           } else {
             setErrorMessage('User credentials are wrong');
@@ -123,7 +130,11 @@ const LoginPage = () => {
 
         </>
                ) : (
-               <p>LogOut</p>
+<div>
+                <h2>Hai! {userData.name}</h2>
+
+               <p>Login Succesful</p>
+               </div>
         )}
       </div>
     </div>
