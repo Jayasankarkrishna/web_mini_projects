@@ -3,8 +3,8 @@ import Cookies from 'js-cookie';
 
 import logo from './logo.svg';
 import './App.css';
-import Login from './Components/practice/Login'
-import Activity from './Components/practice/Activity';
+import Login from './Components/DashBoard/Login'
+import Activity from './Components/DashBoard/Activity';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import WhatsAppQRCode from './Components/WhatApp_Qr/Qr'
 
@@ -19,14 +19,27 @@ import SignupForm from './Components/Authentication/SignupForm';
 import MyGame from './Components/StylePractice/MyGame';
 
 import ChessGame from './Chess/Chess';
-import Sidebar from './Components/practice/Sidebar';
-import Navbar from './Components/practice/Navbar';
+import Sidebar from './Components/DashBoard/Sidebar';
+import Navbar from './Components/DashBoard/Navbar';
 
-function App({ toggleSidebar, closeSidebar }) {
+import ThreeDPage from './Components/3DWebsites/3DCube';
+
+import Welcome from './Components/DashBoard/Welcomepage';
+import Practice from './Components/Practice_makes_good/practice'
+
+import wel from './Components/Practice_makes_good/welcome'
+
+
+function App() {
   
 
   return (
     <div className="App">
+
+
+<welcome/>
+
+
 {/* <Practice/> */}
 
 
@@ -39,13 +52,16 @@ function App({ toggleSidebar, closeSidebar }) {
       <Router>
     <Routes>
        <Route path="/" element={<Login  />} />
-    <Route path="/activity" element={<Activity />} />
-  
+    <Route path="/Welcome" element={<Welcome />} />
+    <Route path='/activity' element={<Activity/>}/>
        </Routes>
- </Router> 
+ </Router>  
+{/* <Welcome/> */}
+{/* <ThreeDPage></ThreeDPage> */}
 
 
-
+{/*  */}
+{/* <Practice/> */}
 
 
 

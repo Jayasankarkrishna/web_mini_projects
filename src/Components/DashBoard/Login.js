@@ -5,8 +5,7 @@ import './Task1.css'
 import {Image } from 'react-bootstrap';
 import { AiFillLock } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
+
 
 
 
@@ -32,15 +31,15 @@ const LoginPage = () => {
 
           if(response.data.loginStatus !== "Fail") {
 
-            const userData=response.data
 
           setUserData(response.data);
+          sessionStorage.setItem('useData', JSON.stringify(response.data));
           setLoggedIn(true);
 
           setTimeout(() => {
 
-            navigate( '/Activity',{state: {userData}});
-            
+            navigate( '/welcome',{state: {userData}});
+
             setErrorMessage('Login Succesful ',response.data.message)
 
           }, 1000); // Delay of 5 seconds
