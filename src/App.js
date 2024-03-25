@@ -36,9 +36,7 @@ function App() {
   return (
     <div className="App">
 
-
-<welcome/>
-
+<Practice/>
 
 {/* <Practice/> */}
 
@@ -48,14 +46,14 @@ function App() {
 {/* <MyGame/> */}
 
 
-
+{/* 
       <Router>
     <Routes>
        <Route path="/" element={<Login  />} />
     <Route path="/Welcome" element={<Welcome />} />
     <Route path='/activity' element={<Activity/>}/>
        </Routes>
- </Router>  
+ </Router>   */}
 {/* <Welcome/> */}
 {/* <ThreeDPage></ThreeDPage> */}
 
